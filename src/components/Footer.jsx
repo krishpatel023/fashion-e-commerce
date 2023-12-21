@@ -1,36 +1,54 @@
 import Amazon from '../assets/icons/amazon.svg'
 import Facebook from '../assets/icons/facebook.svg'
 import Instagram from '../assets/icons/instagram.svg'
+import FooterLogo from '../assets/footerLogo.svg'
 
 export default function Footer() {
   return (
     <>
-    <div className='w-full min-h-[20rem] flex justify-center items-center py-12'>
-      <div className='h-full w-[60%] flex flex-col justify-center gap-3 md:items-center md:text-center'>
-        <h1 className='font-bold text-4xl'>LOGO</h1>
-        <span className='max-w-[40rem]'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea consectetur distinctio a cupiditate assumenda, sed odit dolore unde, magni similique dignissimos quia excepturi facere aut ipsum, quae dicta mollitia iusto?</span>
-        <div className='flex  items-center gap-4'>
-            <img src={Facebook} className='w-8 h-8' alt="" />
-            <img src={Instagram} className='w-6 h-6' alt="" />
-            <img src={Amazon} className='w-6 h-6' alt="" />
-        </div>
+    <div className='w-full bg-[#1E1E1E] min-h-[25rem] flex justify-evenly items-start flex-wrap py-12 gap-16 md:py-10 sm:text-center'>
+
+      <div className='h-full w-[10%] flex flex-col justify-center gap-3 text-white md:w-[12rem] md:h-auto'>
+        <h1 className='text-xl font-bold mb-4 uppercase'>Company</h1>
+        <span className='font-normal cursor-pointer'>About Us</span>
+        <span className='font-normal cursor-pointer'>Our Team</span>
+        <span className='font-normal cursor-pointer'>Career</span>
+        <span className='font-normal cursor-pointer'>Career</span>
       </div>
-      <div className='h-full w-[10%] flex flex-col justify-center items-center gap-3 md:hidden'>
-        <h1 className='font-normal text-xl underline'>About</h1>
-        <span className='hover:text-accent-color cursor-pointer'>About Us</span>
-        <span className='hover:text-accent-color cursor-pointer'>Our Team</span>
-        <span className='hover:text-accent-color cursor-pointer'>Career</span>
+      <div className='h-full w-[10%] flex flex-col justify-center gap-3  text-white md:w-[12rem] md:h-auto'>
+        <h1 className='text-xl font-semibold mb-4 uppercase'>Shop</h1>
+        <span className='font-normal cursor-pointer'>Women</span>
+        <span className='font-normal cursor-pointer'>Men</span>
+        <span className='font-normal cursor-pointer'>Super Savers</span>
+        <span className='font-normal cursor-pointer'>Men Accessories</span>
+        <span className='font-normal cursor-pointer'>Women Accessories</span>
+
       </div>
-      <div className='h-full w-[10%] flex flex-col justify-center items-center gap-3 md:hidden'>
-        <h1 className='font-normal text-xl underline'>Policy</h1>
-        <span className='hover:text-accent-color cursor-pointer'>Privacy Poicy</span>
-        <span className='hover:text-accent-color cursor-pointer'>Return Policy</span>
-        <span className='hover:text-accent-color cursor-pointer'>Contact</span>
+      <div className='h-full w-[10%] flex flex-col justify-center gap-3  text-white md:w-[12rem] md:h-auto'>
+        <h1 className='text-xl font-semibold mb-4 uppercase'>Policies</h1>
+        <span className='font-normal cursor-pointer'>Terms & Conditions</span>
+        <span className='font-normal cursor-pointer'>Cancellations</span>
+        <span className='font-normal cursor-pointer'>FAQ's</span>
+        <span className='font-normal cursor-pointer'>Shipping Policy</span>
+        <span className='font-normal cursor-pointer'>Privacy Policy</span>
+
+      </div>
+      <div className='h-full w-[10%] flex flex-col justify-center gap-3  text-white md:w-[12rem] md:h-auto'>
+        <h1 className='text-xl font-semibold mb-4 uppercase'>Contact</h1>
+        <span className='font-normal cursor-pointer'>+91 9083628322</span>
+        <span className='font-normal cursor-pointer'>lorem92@gmail.com</span>
       </div>
     </div>
-    <div className='w-full h-16 flex flex-col items-center gap-4'>
-        <div className='min-h-[1px] bg-gray-400 w-[90%]'></div>
-        <h1>© Copyright 2023. All rights reserved</h1>
+    <div className='w-full flex flex-col items-center'>
+        <div className='w-[95%] h-[4rem] flex justify-between items-center text-center md:flex-col md:py-4 md:gap-4'>
+            <img className="h-10" src={FooterLogo} alt="" />
+            <h1>© Copyright 2023. All rights reserved</h1>
+            <div className='flex justify-start items-center gap-6'>
+              <a href=""><img className='w-6 h-6' src={Instagram} alt="..." /></a>
+              <a href=""><img className='w-8 h-8' src={Facebook} alt="..." /></a>
+              <a href=""><img className='w-6 h-6' src={Amazon} alt="..." /></a>
+            </div>
+        </div>
     </div>
     </>
   )
